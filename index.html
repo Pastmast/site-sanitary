@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>PROFI HUNT</title>
+
+  <script>
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+      if (window.location.href.indexOf('#') > -1) {
+        window.history.replaceState(null, null, '/');
+      }
+    };
+
+    window.onload = function () {
+      if (window.location.href.indexOf('#') > -1) {
+        window.history.replaceState(null, null, '/');
+      }
+      window.scrollTo(0, 0);
+    };
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <div class="header__left-col">
+          <a class="header__logo-link" href="/" aria-label="Переход на главную страницу">
+            <img class="header__logo-icon" src="images/Logo-header.png" width="114" height="60" alt="логотип компании">
+          </a>
+        </div>
+        <nav class="header__main-nav">
+          <ul class="header__main-nav-list">
+            <li class="header__main-nav-item">
+              <a class="header__main-nav-link" href="#hero">О нас</a>
+            </li>
+            <li class="header__main-nav-item">
+              <a class="header__main-nav-link" href="#advantages">Преимущества</a>
+            </li>
+            <li class="header__main-nav-item">
+              <a class="header__main-nav-link" href="#services">Виды услуг</a>
+            </li>
+            <li class="header__main-nav-item">
+              <a class="header__main-nav-link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__right-col">
+          <a class="header__phone" href="tel:+74951851408" aria-label="Позвонить в компанию">
+            <span class="header__phone-text">+7 495 185 14 08</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero__text">
+          <h1 class="hero__text-title">Доступная дезинсекция квартир в Самаре от насекомых</h1>
+          <p class="hero__text-description">Предоставляем комплексные услуги опытными специалистами по дезинсекции с гарантией качества</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="advantages" class="advantages">
+      <div class="container">
+        <ul class="advantages__list">
+          <li class="advantages__list-item">
+            <div class="advantages__card">
+              <div class="advantages__card-info">
+                <img class="advantages__card-icon" src="images/advantages-quality-icon.png" width="128" height="128" alt="логотип преимущества">
+                <h2 class="advantages__card-title">Квалифицированные сотрудники</h2>
+                <p class="advantages__card-description">
+                  Все сотрудники обучены и обладают высоким уровнем опыта для проведения дезинсекции любых видов помещения
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="advantages__list-item">
+            <div class="advantages__card">
+              <div class="advantages__card-info">
+                <img class="advantages__card-icon" src="images/advantages-time-icon.png" width="128" height="128" alt="логотип преимущества">
+                <h2 class="advantages__card-title">Бережём ваше время</h2>
+                <p class="advantages__card-description">
+                  Всегда приезжаем вовремя и точно рассчитываем время уборки, чтобы вы могли построить свои планы
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="advantages__list-item">
+            <div class="advantages__card">
+              <div class="advantages__card-info">
+                <img class="advantages__card-icon" src="images/advantages-warranty-icon.png" width="128" height="128" alt="логотип преимущества">
+                <h2 class="advantages__card-title">Гарантия качесвта</h2>
+                <p class="advantages__card-description">
+                  Гарантируем качественную дезинсекцию, следуя правилам тщательной обработки и внимательной проверке результата нашей работы
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="advantages__list-item">
+            <div class="advantages__card">
+              <div class="advantages__card-info">
+                <img class="advantages__card-icon" src="images/advantages-equipment-icon.png" width="128" height="128" alt="логотип преимущества">
+                <h2 class="advantages__card-title">Оборудование высокого качества</h2>
+                <p class="advantages__card-description">
+                  Используем оборудование высокого качества, которое отвечает всем требованиям безопасности
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <ul class="services__list">
+          <li class="services__list-item">
+            <div class="services__card">
+              <img class="services__card-img" src="images/services-card-1.jpeg" width="300" height="200" alt="картинка сервиса">
+              <div class="services__card-info">
+                <h2 class="services__card-title">Дезинфекция в 1-комнатной квартире</h2>
+                <p class="services__card-description">
+                  Полная обработка всех поверхностей, включая санузел и кухню. Уничтожение вирусов, бактерий и аллергенов безопасными средствами
+                </p>
+                <span class="services__card-price">от 2 500 руб.</span>
+              </div>
+            </div>
+          </li>
+          <li class="services__list-item">
+            <div class="services__card">
+              <img class="services__card-img" src="images/services-card-2.jpeg" width="300" height="200" alt="картинка сервиса">
+              <div class="services__card-info">
+                <h2 class="services__card-title">Дезинфекция в 2-комнатной квартире</h2>
+                <p class="services__card-description">
+                  Профессиональная обработка жилых комнат, коридоров и зон общего пользования. Защита от плесени, грибка и патогенов
+                </p>
+                <span class="services__card-price">от 3 500 руб.</span>
+              </div>
+            </div>
+          </li>
+          <li class="services__list-item">
+            <div class="services__card">
+              <img class="services__card-img" src="images/services-card-4.jpeg" width="300" height="200" alt="картинка сервиса">
+              <div class="services__card-info">
+                <h2 class="services__card-title">Дезинфекция в 3-комнатной квартире</h2>
+                <p class="services__card-description">
+                  Максимальная очистка большой квартиры с использованием сертифицированных препаратов. Безопасно для детей и животных
+                </p>
+                <span class="services__card-price">от 4 500 руб.</span>
+              </div>
+            </div>
+          </li>
+          <li class="services__list-item">
+            <div class="services__card">
+              <img class="services__card-img" src="images/services-card-5.jpeg" width="300" height="200" alt="картинка сервиса">
+              <div class="services__card-info">
+                <h2 class="services__card-title">Комплексная дезинфекция (квартира + мебель)</h2>
+                <p class="services__card-description">
+                  Глубокая обработка всех поверхностей, включая мягкую мебель, ковры и труднодоступные места
+                </p>
+                <span class="services__card-price">от 5 500 руб.</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+      <div class="container">
+        <div class="contacts__text">
+          <h1 class="contacts__text-title">Более подробную информацию по ценам и проводимым услугам можно узнать, позвонив по номеру телефона или связавжись с нами в социальных сетях:</h1>
+          <div class="contacts__info">
+            <a class="contacts__phone" href="tel:+74951851408" aria-label="Позвонить в компанию">
+              <span class="contacts__phone-text">+7 495 185 14 08</span>
+            </a>
+            <ul class="contacts__social">
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="#" aria-label="Ссылка на whatsapp">
+                  <svg class="contacts__social-icon" width="54" height="54" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="#" aria-label="Ссылка на Телеграм">
+                  <svg class="contacts__social-icon" width="54" height="54" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tg"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="#" aria-label="Ссылка на ВКонтакте">
+                  <svg class="contacts__social-icon" width="69" height="62" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts__social-item">
+                <a class="contacts__social-link" href="#" aria-label="Ссылка на youtube">
+                  <svg class="contacts__social-icon" width="54" height="54" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__left-col">
+          <a class="footer__logo-link" href="#" aria-label="Переход на главную страницу">
+            <img class="footer__logo-icon" src="images/Logo-footer.png" width="214" height="160" alt="логотип компании">
+          </a>
+        </div>
+        <div class="footer__right-col">
+          <a class="footer__phone" href="tel:+74951851408" aria-label="Позвонить в компанию">
+            <span class="footer__phone-text">+7 495 185 14 08</span>
+          </a>
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#" aria-label="Ссылка на whatsapp">
+                <svg class="footer__social-icon" width="34" height="34" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#" aria-label="Ссылка на Телеграм">
+                <svg class="footer__social-icon" width="34" height="34" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-tg"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="/" aria-label="Ссылка на ВКонтакте">
+                <svg class="footer__social-icon" width="49" height="42" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#" aria-label="Ссылка на youtube">
+                <svg class="footer__social-icon" width="44" height="44" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

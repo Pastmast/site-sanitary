@@ -1,0 +1,52 @@
+.hero {
+	.container {
+    padding: 0 80px;
+
+		@include vp-767 {
+			padding: 0;
+		}
+	}
+
+	$root: &;
+	background: url('../images/hero-desktop.jpeg') no-repeat center;
+	background-size: cover;
+	padding: 180px 0;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba($color-blue-charcoa, 0.5);
+	}
+
+	&__text {
+		position: relative;
+		max-width: 850px;
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+		gap: 20px;
+	}
+
+	&__text-title {
+		font-size: 60px;
+		line-height: 65px;
+		letter-spacing: 0.02em;
+		color: $color-white;
+		text-transform: uppercase;
+		font-weight: 400;
+		margin: 0;
+	}
+
+	&__text-description {
+		font-size: 25px;
+		letter-spacing: 0.08em;
+		color: rgba(255, 255, 255, 0.919);
+		font-weight: 300;
+		margin: 0;
+	}
+}
