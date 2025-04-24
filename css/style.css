@@ -535,7 +535,7 @@ html {
 .hero {
   background: url("../images/hero-desktop.jpeg") no-repeat center;
   background-size: cover;
-  padding: 180px 0;
+  padding: 120px 0;
   position: relative;
 }
 .hero .container {
@@ -557,26 +557,27 @@ html {
 }
 .hero__text {
   position: relative;
-  max-width: 850px;
   display: flex;
   flex-direction: column;
   z-index: 1;
   gap: 20px;
 }
 .hero__text-title {
+  max-width: 950px;
   font-size: 60px;
   line-height: 65px;
   letter-spacing: 0.02em;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 400;
-  margin: 0;
+  margin: 0 0 20px;
 }
 .hero__text-description {
+  max-width: 1000px;
   font-size: 25px;
-  letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.919);
-  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: white;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -584,26 +585,29 @@ html {
   padding: 80px 0;
   margin: 0 0 50px;
 }
+.advantages .container {
+  padding: 0 60px;
+}
 .advantages__list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 50px 50px;
+  gap: 50px 37px;
   padding: 0;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 .advantages__card {
-  width: 430px;
-  min-height: 310px;
+  width: 390px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding: 20px 10px;
+  padding: 20px 6px;
   justify-content: start;
-  border: 3px solid #a1d418;
+  border: 3px solid rgba(250, 217, 119, 0.8549019608);
   border-radius: 50px;
 }
 .advantages__card-info {
@@ -611,6 +615,7 @@ html {
   gap: 20px;
   display: flex;
   flex-direction: column;
+  align-items: start;
   justify-content: center;
   flex-wrap: wrap;
 }
