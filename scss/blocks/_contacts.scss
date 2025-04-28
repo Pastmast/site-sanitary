@@ -2,8 +2,8 @@
 	.container {
 		padding: 0 80px;
 
-		@include vp-767 {
-			padding: 0;
+		@media (max-width: $vp-mobile) {
+			padding: 0 20px;
 		}
 	}
 
@@ -12,6 +12,14 @@
 	background-size: cover;
 	padding: 130px 0;
 	position: relative;
+
+	@media (max-width: $vp-tablet) {
+		padding: 80px 0;
+	}
+
+	@media (max-width: $vp-mobile) {
+		padding: 20px 0;
+	}
 
 	&::after {
 		content: '';
@@ -40,6 +48,12 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 20px;
+
+		@media (max-width: $vp-mobile) {
+			font-size: 16px;
+			line-height: 1.3;
+			margin: 0;
+		}
 	}
 
 	&__info {
@@ -58,6 +72,10 @@
 		&:focus-visible {
 			opacity: 0.7;
 		}
+
+		@media (max-width: $vp-mobile) {
+			font-size: 18px;
+		}
 	}
 
 	&__social {
@@ -69,6 +87,10 @@
 		align-items: center;
 		width: 400px;
 		flex-wrap: wrap;
+
+		@media (max-width: $vp-mobile) {
+			width: 250px;
+		}
 	}
 
 	&__social-link {
@@ -89,5 +111,10 @@
 		width: 100%;
 		height: 100%;
 		fill: currentColor;
+
+		@media (max-width: $vp-mobile) {
+			width: 35px;
+			height: 35px;
+		}
 	}
 }

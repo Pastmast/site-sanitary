@@ -1,6 +1,14 @@
 .container {
-  width: 100%;
-  max-width: 1728px;
-  margin: 0 auto;
-  padding: 0 224px;
+	width: 100%;
+	max-width: 1728px;
+	margin: 0 auto;
+	padding: 0 15px;
+
+	@media (min-width: $vp-tablet) {
+		padding: 0 50px; 
+	}
+
+	@media (min-width: 1200px) {
+		padding: 0 224px; 
+	}
 }

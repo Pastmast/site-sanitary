@@ -1,18 +1,19 @@
 /* Global */
-/* ------------------------------------ */
-@import 'global/_normalize';
-@import 'global/_fonts';
 @import 'global/_variables';
 @import 'global/_mixins';
+@import 'global/_normalize';
+@import 'global/_fonts';
 @import 'global/_reboot';
 @import 'global/_container';
 @import 'global/_visually-hidden';
 
+/* Critical CSS */
+@import 'global/_critical';
+
 /* Blocks */
-/* ------------------------------------ */
 @import 'blocks/_header';
 @import 'blocks/_hero';
 @import 'blocks/_advantages';
-@import 'blocks/services';
+@import 'blocks/_services';
 @import 'blocks/_contacts';
 @import 'blocks/_footer';

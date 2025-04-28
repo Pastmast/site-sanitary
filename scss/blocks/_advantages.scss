@@ -1,10 +1,22 @@
 .advantages {
 	.container {
 		padding: 0 60px;
+
+		@media (max-width: $vp-mobile) {
+			padding: 0 20px;
+		}
 	}
 
 	padding: 80px 0;
 	margin: 0 0 50px;
+
+	@media (max-width: $vp-tablet) {
+		padding: 50px 0;
+	}
+
+	@media (max-width: 767px) {
+		padding: 20px 0;
+	}
 
 	&__list {
 		list-style: none;
@@ -15,6 +27,11 @@
 		width: 100%;
 		align-items: center;
 		justify-content: center;
+
+		@media (max-width: $vp-tablet) {
+			gap: 25px 20px;
+			align-items: start;
+		}
 	}
 
 	&__card {
@@ -28,11 +45,24 @@
 		justify-content: start;
 		border: 3px solid #fad977da;
 		border-radius: 50px;
+
+		@media (max-width: $vp-tablet) {
+			width: 300px;
+			padding: 10px 3px;
+		}
+
+		@media (max-width: 767px) {
+			min-height: auto;
+		}
+
+		@media (max-width: $vp-mobile) {
+			width: 100%;
+		}
 	}
 
 	&__card-info {
 		padding: 10px 20px;
-		gap: 20px;
+		gap: 10px;
 		display: flex;
 		flex-direction: column;
 		align-items: start;
@@ -43,6 +73,11 @@
 	&__card-icon {
 		width: 80px;
 		height: 80px;
+
+		@media (max-width: $vp-mobile) {
+			width: 50px;
+			height: 50px;
+		}
 	}
 
 	&__card-title {
@@ -51,6 +86,14 @@
 		text-transform: uppercase;
 		font-weight: 600;
 		margin: 0;
+
+		@media (max-width: $vp-tablet) {
+			font-size: 20px;
+		}
+
+		@media (max-width: $vp-mobile) {
+			font-size: 18px;
+		}
 	}
 
 	&__card-description {
@@ -58,5 +101,13 @@
 		color: rgb(119, 116, 116);
 		font-weight: 300;
 		margin: 0;
+
+		@media (max-width: $vp-tablet) {
+			font-size: 15px;
+		}
+
+		@media (max-width: $vp-mobile) {
+			font-size: 13px;
+		}
 	}
 }

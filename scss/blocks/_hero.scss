@@ -2,8 +2,8 @@
 	.container {
 		padding: 0 80px;
 
-		@include vp-767 {
-			padding: 0;
+		@media (max-width: 543px) {
+			padding: 0 20px;
 		}
 	}
 
@@ -12,6 +12,18 @@
 	background-size: cover;
 	padding: 120px 0;
 	position: relative;
+
+	@media (max-width: $vp-tablet) {
+		padding: 80px 0;
+	}
+
+	@media (max-width: 620px) {
+		padding: 20px 0;
+	}
+
+	@media (max-width: $vp-mobile) {
+		padding: 20px 0;
+	}
 
 	&::after {
 		content: '';
@@ -29,6 +41,10 @@
 		flex-direction: column;
 		z-index: 1;
 		gap: 20px;
+
+		@media (max-width: 620px) {
+			gap: 10px;
+		}
 	}
 
 	&__text-title {
@@ -40,6 +56,24 @@
 		text-transform: uppercase;
 		font-weight: 400;
 		margin: 0 0 20px;
+
+		@media (max-width: $vp-tablet) {
+			font-size: 40px;
+			line-height: 1.2;
+		}
+
+		@media (max-width: 590px) {
+			font-size: 25px;
+			line-height: 1.1;
+		}
+
+		@media (max-width: 423px) {
+			font-size: 20px;
+		}
+
+		@media (max-width: $vp-mobile) {
+			font-size: 20px;
+		}
 	}
 
 	&__text-description {
@@ -49,5 +83,26 @@
 		color: white;
 		font-weight: 400;
 		margin: 0;
+
+		@media (max-width: $vp-tablet) {
+			font-size: 20px;
+		}
+
+		@media (max-width: 590px) {
+			font-size: 15px;
+			line-height: 1.1;
+		}
+
+		@media (max-width: 543px) {
+			color: rgb(240, 239, 239);
+		}
+
+		@media (max-width: 423px) {
+			font-size: 15px;
+		}
+
+		@media (max-width: $vp-mobile) {
+			font-size: 15px;
+		}
 	}
 }

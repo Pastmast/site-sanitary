@@ -1,0 +1,10 @@
+// Стили, необходимые для первоначальной отрисовки
+body {
+	font-family: $ff-imb-plex;
+	line-height: $line-height;
+	color: $color-black;
+}
+
+.hero {
+	background-color: $color-secondary; // Фолбэк если изображение не загрузилось
+}
